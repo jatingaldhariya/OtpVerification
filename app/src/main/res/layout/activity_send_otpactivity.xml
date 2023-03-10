@@ -94,18 +94,33 @@
             android:layout_marginEnd="70dp"
             android:background="@color/textSecondary"/>
 
-        <Button
-            android:id="@+id/btn_GetOtp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:layout_margin="30dp"
-            android:background="@drawable/btn_background"
-            android:text="@string/get_otp"
-            android:textAllCaps="false"
-            android:textStyle="bold"/>
         
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <Button
+                android:id="@+id/btn_GetOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_margin="30dp"
+                android:background="@drawable/btn_background"
+                android:text="@string/get_otp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+            
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
     </LinearLayout>
 
 
